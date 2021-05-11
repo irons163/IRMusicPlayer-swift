@@ -37,8 +37,6 @@ open class MusicPlayerViewController: UIViewController {
     
     open weak var delegate: MusicPlayerViewCallBackDelegate?
     
-    
-    
     var musicLength: CGFloat = 0.0
     var downloadSeconds: CGFloat = 0.0
     var audioNowTime: CGFloat = 0.0
@@ -63,7 +61,6 @@ open class MusicPlayerViewController: UIViewController {
     open override func viewDidLoad() {
         super.viewDidLoad()
         
-        //        self.titleLbl.textColor =
     }
     
     open override func viewWillAppear(_ animated: Bool) {
@@ -146,7 +143,7 @@ open class MusicPlayerViewController: UIViewController {
         
         if object as? NSObject == self.player && keyPath == "status" {
             if self.player?.status == AVPlayer.Status.readyToPlay {
-                goProgressTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(goProgress(theTimer:)), userInfo: nil, repeats: true)
+                goProgressTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(goProgress(theTimer:)), userInfo: nil, repeats: true)
                 
                 self.player?.play()
                 self.playBtn.setImage(UIImage.imageNamedForCurrentBundle(named: "btn_pause"), for: .normal)
@@ -218,7 +215,7 @@ open class MusicPlayerViewController: UIViewController {
                     }
                     
                     //update slider
-                    let diff = 1 / musicLength
+                    let diff = Double(1 / musicLength) * Double(theTimer.timeInterval)
                     var progress = self.slider.value
                     progress = progress + Float(diff)
                     self.slider.value = progress
