@@ -13,6 +13,11 @@
 		4A44E3A62524951800CE3540 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A44E3A42524951800CE3540 /* Main.storyboard */; };
 		4A44E3A82524951900CE3540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A44E3A72524951900CE3540 /* Assets.xcassets */; };
 		4A44E3AB2524951900CE3540 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A44E3A92524951900CE3540 /* LaunchScreen.storyboard */; };
+		4AF5D69E2645128900A7158E /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AF5D69B2645128800A7158E /* 1.mp3 */; };
+		4AF5D69F2645128900A7158E /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AF5D69C2645128900A7158E /* 2.mp3 */; };
+		4AF5D6A02645128900A7158E /* 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AF5D69D2645128900A7158E /* 3.mp3 */; };
+		4AF5D6A3264513E500A7158E /* IRMusicPlayer_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A44E3B72524952600CE3540 /* IRMusicPlayer_swift.framework */; };
+		4AF5D6A4264513E500A7158E /* IRMusicPlayer_swift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A44E3B72524952600CE3540 /* IRMusicPlayer_swift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +30,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4AF5D6A5264513E500A7158E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4AF5D6A4264513E500A7158E /* IRMusicPlayer_swift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4A44E39B2524951800CE3540 /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A44E39E2524951800CE3540 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +54,9 @@
 		4A44E3AA2524951900CE3540 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A44E3AC2524951900CE3540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A44E3B22524952600CE3540 /* IRMusicPlayer-swift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "IRMusicPlayer-swift.xcodeproj"; path = "../IRMusicPlayer-swift.xcodeproj"; sourceTree = "<group>"; };
+		4AF5D69B2645128800A7158E /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
+		4AF5D69C2645128900A7158E /* 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 2.mp3; sourceTree = "<group>"; };
+		4AF5D69D2645128900A7158E /* 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 3.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AF5D6A3264513E500A7158E /* IRMusicPlayer_swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +77,7 @@
 				4A44E3B22524952600CE3540 /* IRMusicPlayer-swift.xcodeproj */,
 				4A44E39D2524951800CE3540 /* demo */,
 				4A44E39C2524951800CE3540 /* Products */,
+				4AF5D6A2264513E500A7158E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +92,9 @@
 		4A44E39D2524951800CE3540 /* demo */ = {
 			isa = PBXGroup;
 			children = (
+				4AF5D69B2645128800A7158E /* 1.mp3 */,
+				4AF5D69C2645128900A7158E /* 2.mp3 */,
+				4AF5D69D2645128900A7158E /* 3.mp3 */,
 				4A44E39E2524951800CE3540 /* AppDelegate.swift */,
 				4A44E3A02524951800CE3540 /* SceneDelegate.swift */,
 				4A44E3A22524951800CE3540 /* ViewController.swift */,
@@ -87,6 +114,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4AF5D6A2264513E500A7158E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -97,6 +131,7 @@
 				4A44E3972524951800CE3540 /* Sources */,
 				4A44E3982524951800CE3540 /* Frameworks */,
 				4A44E3992524951800CE3540 /* Resources */,
+				4AF5D6A5264513E500A7158E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,7 +196,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AF5D6A02645128900A7158E /* 3.mp3 in Resources */,
+				4AF5D69E2645128900A7158E /* 1.mp3 in Resources */,
 				4A44E3AB2524951900CE3540 /* LaunchScreen.storyboard in Resources */,
+				4AF5D69F2645128900A7158E /* 2.mp3 in Resources */,
 				4A44E3A82524951900CE3540 /* Assets.xcassets in Resources */,
 				4A44E3A62524951800CE3540 /* Main.storyboard in Resources */,
 			);
@@ -321,6 +359,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T6VV6T753H;
 				INFOPLIST_FILE = demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -338,6 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T6VV6T753H;
 				INFOPLIST_FILE = demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

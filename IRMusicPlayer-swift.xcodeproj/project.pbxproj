@@ -8,12 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		4A44E38C2524950800CE3540 /* IRMusicPlayer_swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A44E38A2524950800CE3540 /* IRMusicPlayer_swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A64956125DE3A660000BFCD /* MusicPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64956025DE3A660000BFCD /* MusicPlayerViewController.swift */; };
+		4A64956425DE3ADC0000BFCD /* MusicPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A64956325DE3ADC0000BFCD /* MusicPlayerViewController.xib */; };
+		4A64956725DE3B3B0000BFCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A64956625DE3B3B0000BFCD /* Assets.xcassets */; };
+		4A64957025DE483F0000BFCD /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64956F25DE483F0000BFCD /* Utilities.swift */; };
+		4A64957325DE48700000BFCD /* UIImage+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64957225DE48700000BFCD /* UIImage+Bundle.swift */; };
+		4A64957725DE48910000BFCD /* UIColor+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64957625DE48910000BFCD /* UIColor+Helper.swift */; };
+		4A64957B25DE4D8A0000BFCD /* KeysDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64957A25DE4D8A0000BFCD /* KeysDefine.swift */; };
+		4A64957E25DE758D0000BFCD /* StatusClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A64957D25DE758D0000BFCD /* StatusClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A44E3872524950800CE3540 /* IRMusicPlayer_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IRMusicPlayer_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A44E38A2524950800CE3540 /* IRMusicPlayer_swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRMusicPlayer_swift.h; sourceTree = "<group>"; };
 		4A44E38B2524950800CE3540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A64956025DE3A660000BFCD /* MusicPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewController.swift; sourceTree = "<group>"; };
+		4A64956325DE3ADC0000BFCD /* MusicPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicPlayerViewController.xib; sourceTree = "<group>"; };
+		4A64956625DE3B3B0000BFCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A64956F25DE483F0000BFCD /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		4A64957225DE48700000BFCD /* UIImage+Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Bundle.swift"; sourceTree = "<group>"; };
+		4A64957625DE48910000BFCD /* UIColor+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Helper.swift"; sourceTree = "<group>"; };
+		4A64957A25DE4D8A0000BFCD /* KeysDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeysDefine.swift; sourceTree = "<group>"; };
+		4A64957D25DE758D0000BFCD /* StatusClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +62,42 @@
 		4A44E3892524950800CE3540 /* IRMusicPlayer-swift */ = {
 			isa = PBXGroup;
 			children = (
-				4A44E38A2524950800CE3540 /* IRMusicPlayer_swift.h */,
+				4A64956625DE3B3B0000BFCD /* Assets.xcassets */,
+				4A64955D25DE3A0E0000BFCD /* Classes */,
 				4A44E38B2524950800CE3540 /* Info.plist */,
 			);
 			path = "IRMusicPlayer-swift";
+			sourceTree = "<group>";
+		};
+		4A64955D25DE3A0E0000BFCD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4A44E38A2524950800CE3540 /* IRMusicPlayer_swift.h */,
+				4A64955F25DE3A300000BFCD /* UI */,
+				4A64955E25DE3A1A0000BFCD /* Utilities */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4A64955E25DE3A1A0000BFCD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4A64957625DE48910000BFCD /* UIColor+Helper.swift */,
+				4A64957225DE48700000BFCD /* UIImage+Bundle.swift */,
+				4A64957A25DE4D8A0000BFCD /* KeysDefine.swift */,
+				4A64957D25DE758D0000BFCD /* StatusClass.swift */,
+				4A64956F25DE483F0000BFCD /* Utilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4A64955F25DE3A300000BFCD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4A64956025DE3A660000BFCD /* MusicPlayerViewController.swift */,
+				4A64956325DE3ADC0000BFCD /* MusicPlayerViewController.xib */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +143,7 @@
 				TargetAttributes = {
 					4A44E3862524950800CE3540 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1230;
 					};
 				};
 			};
@@ -121,6 +170,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A64956725DE3B3B0000BFCD /* Assets.xcassets in Resources */,
+				4A64956425DE3ADC0000BFCD /* MusicPlayerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A64957E25DE758D0000BFCD /* StatusClass.swift in Sources */,
+				4A64957325DE48700000BFCD /* UIImage+Bundle.swift in Sources */,
+				4A64957025DE483F0000BFCD /* Utilities.swift in Sources */,
+				4A64956125DE3A660000BFCD /* MusicPlayerViewController.swift in Sources */,
+				4A64957725DE48910000BFCD /* UIColor+Helper.swift in Sources */,
+				4A64957B25DE4D8A0000BFCD /* KeysDefine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +317,7 @@
 		4A44E3902524950800CE3540 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +333,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "irons163.IRMusicPlayer-swift";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +342,7 @@
 		4A44E3912524950800CE3540 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
