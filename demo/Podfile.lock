@@ -1,0 +1,16 @@
+PODS:
+  - IRMusicPlayer-swift (1.0.0)
+
+DEPENDENCIES:
+  - IRMusicPlayer-swift
+
+SPEC REPOS:
+  trunk:
+    - IRMusicPlayer-swift
+
+SPEC CHECKSUMS:
+  IRMusicPlayer-swift: 11cc4447a18a97f30d0fb61c3ed8a5179bea223a
+
+PODFILE CHECKSUM: 88a14a423ba438459d830228395c228de9fa7bd4
+
+COCOAPODS: 1.10.0

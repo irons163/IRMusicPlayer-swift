@@ -1,0 +1,6 @@
+framework module IRMusicPlayer_swift {
+  umbrella header "IRMusicPlayer-swift-umbrella.h"
+
+  export *
+  module * { export * }
+}
